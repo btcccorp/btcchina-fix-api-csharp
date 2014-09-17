@@ -1,0 +1,21 @@
+[DEFAULT]
+FileStorePath=data/btcc_fix_client
+FileLogPath=data/btcc_client_log
+ConnectionType=initiator
+ReconnectInterval=60
+SenderCompID=<YOUR ACCESS KEY>
+
+[SESSION]
+BeginString=FIX.4.4
+TargetCompID=BTCC-FIX-SERVER
+HeartBtInt=30
+SocketConnectPort=9880
+SocketConnectHost=fix.btcchina.com
+SSLEnable=Y
+StartTime=00:00:00
+EndTime=00:00:00
+ReconnectInterval=5
+ResetOnDisconnect=Y
+ResetOnLogout=Y
+ResetOnLogon=Y
+ResetOnError=Y
